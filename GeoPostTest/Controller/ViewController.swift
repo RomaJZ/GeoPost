@@ -115,7 +115,12 @@ extension ViewController: UITextFieldDelegate {
             startTimerButton.isEnabled = false
             alertAboutWrongNumbers()
         }
-        startTimerButton.isEnabled = true
+        
+        if textField.text!.isEmpty {
+            startTimerButton.isEnabled = false
+        } else {
+            startTimerButton.isEnabled = true
+        }
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
