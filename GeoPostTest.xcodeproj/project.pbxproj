@@ -13,6 +13,8 @@
 		4249A3E024AF370A0020BCEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4249A3DE24AF370A0020BCEE /* Main.storyboard */; };
 		4249A3E224AF370B0020BCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4249A3E124AF370B0020BCEE /* Assets.xcassets */; };
 		4249A3E524AF370B0020BCEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4249A3E324AF370B0020BCEE /* LaunchScreen.storyboard */; };
+		4249A3ED24AF4CB80020BCEE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249A3EC24AF4CB80020BCEE /* Networking.swift */; };
+		4249A3EF24AF4CCC0020BCEE /* GeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249A3EE24AF4CCC0020BCEE /* GeoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4249A3E124AF370B0020BCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4249A3E424AF370B0020BCEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4249A3E624AF370B0020BCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4249A3EC24AF4CB80020BCEE /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		4249A3EE24AF4CCC0020BCEE /* GeoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				4249A3D824AF370A0020BCEE /* AppDelegate.swift */,
 				4249A3DA24AF370A0020BCEE /* SceneDelegate.swift */,
-				4249A3DC24AF370A0020BCEE /* ViewController.swift */,
+				4249A3F224AF4CE40020BCEE /* Controller */,
+				4249A3F024AF4CD10020BCEE /* Model */,
+				4249A3F124AF4CDB0020BCEE /* Networking */,
 				4249A3DE24AF370A0020BCEE /* Main.storyboard */,
 				4249A3E124AF370B0020BCEE /* Assets.xcassets */,
 				4249A3E324AF370B0020BCEE /* LaunchScreen.storyboard */,
 				4249A3E624AF370B0020BCEE /* Info.plist */,
 			);
 			path = GeoPostTest;
+			sourceTree = "<group>";
+		};
+		4249A3F024AF4CD10020BCEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4249A3EE24AF4CCC0020BCEE /* GeoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4249A3F124AF4CDB0020BCEE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4249A3EC24AF4CB80020BCEE /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4249A3F224AF4CE40020BCEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4249A3DC24AF370A0020BCEE /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +171,8 @@
 				4249A3DD24AF370A0020BCEE /* ViewController.swift in Sources */,
 				4249A3D924AF370A0020BCEE /* AppDelegate.swift in Sources */,
 				4249A3DB24AF370A0020BCEE /* SceneDelegate.swift in Sources */,
+				4249A3EF24AF4CCC0020BCEE /* GeoModel.swift in Sources */,
+				4249A3ED24AF4CB80020BCEE /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QLK5LJV6W;
 				INFOPLIST_FILE = GeoPostTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Roma-Co.GeoPostTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QLK5LJV6W;
 				INFOPLIST_FILE = GeoPostTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Roma-Co.GeoPostTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
